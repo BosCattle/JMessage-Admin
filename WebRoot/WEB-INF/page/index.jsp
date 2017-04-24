@@ -37,7 +37,7 @@
             <label class="login-field-icon fui-lock" for="login-pass"></label>
         </div>
 
-        <a class="btn btn-primary btn-lg btn-block" href="#">登录</a>
+        <a class="btn btn-primary btn-lg btn-block" href="#" id="login_button">登录</a>
         <a class="login-link" href="#">忘记密码</a>
     </div>
 </div>
@@ -45,4 +45,5 @@
 <script type="text/javascript" src="static/js/jquery.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
 <script type="text/javascript" src="static/js/flat-ui.js"></script>
+<script type="text/javascript" src="static/js/strophe.js"></script>
 </html>
