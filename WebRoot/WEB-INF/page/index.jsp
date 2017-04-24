@@ -12,6 +12,13 @@
     <link type="text/css" rel="stylesheet" href="static/css/flat-ui.css"/>
     <link type="text/css" rel="stylesheet" href="resource/css/base.css"/>
     <style type="text/css">
+        #div_login{
+            /*position: absolute;*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*margin-left: -200px;*/
+            /*margin-top: -200px;*/
+        }
     </style>
 </head>
 <body>
