@@ -10,12 +10,12 @@
   <!-- 加载Spring配置文件 -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:src/main/webapp/WEB-INF/applicationContext.xml</param-value>
+    <param-value>/WEB-INF/applicationContext.xml</param-value>
   </context-param>
   <!-- 日志记录 -->
   <context-param>
     <param-name>log4jConfigLocation</param-name>
-    <param-value>classpath:log4j.properties</param-value>
+    <param-value>/WEB-INF/log4j.properties</param-value>
   </context-param>
   <context-param>
     <param-name>log4jRefreshInterval</param-name>
@@ -52,7 +52,7 @@
     <!-- 自定义spring mvc的配置文件名称和路径 -->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:src/main/webapp/WEB-INF/dispatcher-servlet.xml</param-value>
+      <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -60,6 +60,6 @@
   <!-- spring mvc 请求后缀 -->
   <servlet-mapping>
     <servlet-name>springMVC</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>
