@@ -7,8 +7,8 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AdminController {
 
-  @RequestMapping("/index")
+  @RequestMapping("/login")
   public ModelAndView index(){
-    return new ModelAndView("index");
+    return new ModelAndView("login");
   }
 }

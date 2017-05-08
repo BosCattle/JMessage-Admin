@@ -1,5 +1,4 @@
 var bosh_service = "ws://localhost:5290/bosh";
-var connection = null;
 var jid = "";
 var connected = false;
 // 连接状态改变的事件
@@ -21,13 +20,15 @@ function onConnect(status) {
     connection.send($pres().tree());
   }
 
+  function login() {
+    if (!connected) {
+      connection = new Strophe().Connection(bosh_service);
+      jid = $("#login-name").val();
+      connection.connect(jid, $("#login-pass").val(), onConnect);
+    }
+  }
+
   $(function () {
-    $("login_button").click(function () {
-      if (!connected) {
-        connection = new Strophe().Connection(bosh_service);
-        jid = $("#login-name").val();
-        connection.connect(jid, $("#login-pass").val(), onConnect);
-      }
-    });
+    $("login_button").click = login();
   })
 }
